@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esprit Racine Timer</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le CSS -->
+</head>
+<body>
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="assets/esprit_racine_logo.png" alt="Esprit Racine Logo" class="logo">
+    </div>
+    
+    <!-- Status et Timer -->
+    <div class="timer-container">
+        <h1 id="status">Travail</h1>
+        <div id="timer">60</div>
+    </div>
+
+    <!-- Contrôles pour démarrer, arrêter et définir le temps -->
+    <div class="controls">
+        <button id="startButton">Démarrer</button>
+        <button id="stopButton">Arrêter</button>
+        <div class="time-settings">
+            <input type="number" id="workTime" placeholder="Temps de travail (sec)">
+            <input type="number" id="restTime" placeholder="Temps de pause (sec)">
+            <button id="setTimeButton">Définir le temps</button>
+        </div>
+    </div>
+
+    <!-- Choix de la musique -->
+    <div class="music-controls">
+        <label for="workMusicSelect">Choisir la musique de travail :</label>
+        <select id="workMusicSelect">
+            <option value="assets/song1.mp3">Musique de travail 1</option>
+            <option value="assets/song2.mp3">Musique de travail 2</option>
+        </select>
+        
+        <label for="restMusicSelect">Choisir la musique de pause :</label>
+        <select id="restMusicSelect">
+            <option value="assets/song1.mp3">Musique de pause 1</option>
+            <option value="assets/song2.mp3">Musique de pause 2</option>
+        </select>
+        
+        <button id="playMusicButton">Lire la musique</button>
+        <button id="stopMusicButton">Arrêter la musique</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Lien vers le JavaScript -->
+</body>
+</html>
